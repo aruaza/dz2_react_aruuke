@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(to right, #a1ffd9, #f3ff77, #3ffbe0);
+    background-size: 300% auto; 
+    animation: gradientAnimation 1s linear infinite alternate;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.header a {
+    text-decoration: none;
+    color: #333;
+    transition: .3s;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .header a:hover{
+    color: #fff;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-around;
+    padding: 17px 20px;  
+    border-radius: 6px;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+  }
+ ul a {
+    color: #fff;
+  }
+  li {
+    background-color: #3333333e;
+    padding: 15px;
+    border-radius: 10px;
+    list-style: none;
+  }
+  
+  .posts {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .postsComment {
+    display: flex;
+  }
+  
